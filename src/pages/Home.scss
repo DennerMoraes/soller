@@ -3,6 +3,16 @@
 .container {
     overflow: hidden;
 
+    .purple-bg {
+        background-color: $purple;
+
+        @include breakpoint-desktop {
+            padding: 2rem 0;
+            z-index: 1;
+            position: relative;
+        }
+    }
+
     .purple-session {
         @extend .flex-center;
         background-color: $purple;

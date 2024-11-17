@@ -112,13 +112,15 @@ function Home() {
         </div>
         <ImageVariations srcImageMobile={YellowPhone} altImage='Phone' srcAux1={YellowBean} altAux1="YellowBean" variation={3} />
       </div>
-      <div className='purple-session'>
-        <div className='title-button'>
-          <TextTeaser subtitle={'Join other Sun harvesters'} title={'Make something awesome'} description={'Dui euismod iaculis libero, aliquet vitae et elementum porttitor. Eleifend mi tristique condimentum congue fusce nunc, donec magnis commodo.'} variation='purple' />
-          <Button label={'Request a Quote'} variation="line-yellow" />
+      <div className='purple-bg'>
+        <div className='purple-session'>
+          <div className='title-button'>
+            <TextTeaser subtitle={'Join other Sun harvesters'} title={'Make something awesome'} description={'Dui euismod iaculis libero, aliquet vitae et elementum porttitor. Eleifend mi tristique condimentum congue fusce nunc, donec magnis commodo.'} variation='purple' />
+            <Button label={'Request a Quote'} variation="line-yellow" />
+          </div>
         </div>
+        <Carousel carouselData={carouselData} />
       </div>
-      <Carousel carouselData={carouselData} />
       <div className='purple-session bg-light'>
         <div className='title-button'>
           <TextTeaser subtitle='Get the Sun to power your home' title='All the power that you need for your house is now available' variation='purple' />
