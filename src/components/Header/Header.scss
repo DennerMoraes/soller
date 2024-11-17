@@ -1,0 +1,140 @@
+@import '../../styles/global';
+
+.header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+
+  .header-container {
+    @extend .flex-center;
+    align-items: flex-start;
+    margin: 0 auto;
+    position: relative;
+    height: 3.5rem;
+
+    @media (min-width: 1180px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      max-width: 110rem;
+      padding: 1.5rem 1rem;
+      height: auto;
+    }
+  }
+
+  .logo img {
+    width: 5.063rem;
+    padding-left: 1rem;
+
+    @media (min-width: 1180px) {
+      padding: 0;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: 1180px) {
+      background-color: transparent;
+      box-shadow: none;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      position: relative;
+      transform: translateX(0);
+      gap: 1rem;
+      padding-left: 2.375rem;
+      width: auto;
+    }
+
+    a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: $font-blue;
+      font-weight: 500;
+      transition: color 0.3s;
+      font-family: $roboto;
+
+      &:hover {
+        color: $purple;
+      }
+
+      @media (min-width: 1180px) {
+        padding: 0.75rem 0.5rem;
+      }
+    }
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+
+  .menu-icon {
+    position: absolute;
+    right: 0.5rem;
+    display: block;
+    cursor: pointer;
+    color: $font-blue;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      color: $purple;
+    }
+
+    &.open {
+      transform: rotate(180deg);
+      position: fixed;
+    }
+
+    @media (min-width: 1180px) {
+      display: none;
+    }
+  }
+
+  .right-items {
+    display: none;
+
+    @media (min-width: 1180px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5rem;
+      margin-left: auto;
+
+      .contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          font-size: 1rem;
+          font-family: $roboto;
+          letter-spacing: 0.031rem;
+          color: $blue;
+          font-weight: 600;
+          margin: 0;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+}

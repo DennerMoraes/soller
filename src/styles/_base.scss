@@ -1,0 +1,22 @@
+.description-text {
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    color: $font-blue;
+    margin: 0;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-size {
+    width: 100%;
+    max-width: 1750px;
+    margin: auto;
+}

@@ -1,0 +1,55 @@
+@import '../../styles/global';
+
+.container-textGrid {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 0 1rem 4rem 1rem;
+
+    @include breakpoint-tablet {
+        width: 100%;
+        max-width: 72.5rem;
+        box-sizing: border-box;
+    }
+
+    .item-textGrid {
+        @extend .flex-center;
+
+        @include breakpoint-laptop {
+            align-items: flex-start;
+        }
+
+        .icon-textGrid {
+            display: flex;
+            justify-content: center;
+            height: 4rem;
+        }
+
+        h3 {
+            font-family: $roboto;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.375rem;
+            text-align: center;
+            margin: 1rem 0;
+
+            @include breakpoint-desktop {
+                font-size: 1.5rem;
+                line-height: 1.65rem;
+                margin: 1.563rem 0;
+                text-align: start;
+            }
+        }
+
+        p {
+            @extend .description-text;
+
+            @include breakpoint-laptop {
+                font-size: 1.125rem;
+                line-height: 1.8rem;
+                text-align: start;
+            }
+        }
+    }
+}

@@ -1,0 +1,221 @@
+@import '../../styles/global';
+
+.main-ImageVariations, .mainMobile-ImageVariations {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+.container-ImageVariations1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    .main-ImageVariations {
+        display: none;
+        width: 100%;
+        z-index: 2;
+
+        @include breakpoint-tablet {
+            display: flex;
+            width: 85%;
+            max-width: 95rem;
+        }
+        
+        @include breakpoint-desktop {
+            padding-bottom: 10rem;
+        }
+    }
+
+    .mainMobile-ImageVariations {
+        width: 100%;
+        z-index: 2;
+
+        @include breakpoint-tablet {
+            display: none;
+        }
+    }
+
+    .aux1-ImageVariations {
+        position: absolute;
+        width: 66vw;
+        top: -40px;
+        left: -37%;
+        z-index: -1;
+
+        @include breakpoint-tablet {
+            top: -10%;
+            left: -10%;
+            width: 40%;
+            max-width: 44.375rem;
+        }
+
+        @include breakpoint-desktop {
+            top: -15%;
+        }
+    }
+
+    .aux2-ImageVariations {
+        position: absolute;
+        width: 56vw;
+        top: 30px;
+        right: -180px;
+
+        @include breakpoint-tablet {
+            top: 10%;
+            right: -10%;
+            width: 35%;
+            max-width: 37.25rem;
+        }
+
+        @include breakpoint-desktop {
+            top: 5%;
+            right: -3%;
+        }
+    }
+}
+
+.container-ImageVariations2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    .mainMobile-ImageVariations {
+        width: 90%;
+        z-index: 2;
+        padding: 0 0 0 64px;
+
+        @include breakpoint-tablet {
+            width: 60%;
+        }
+
+        @include breakpoint-laptop {
+            width: 100%;
+            max-width: 32rem;
+            padding: 0;
+        }
+    }
+
+    .aux1-ImageVariations {
+        position: absolute;
+        top: -24px;
+        left: -275px;
+        z-index: -1;
+
+        @include breakpoint-tablet {
+            top: -30px;
+            left: -275px;
+            width: 100%;
+        }
+
+        @include breakpoint-laptop {
+            width: 50vw;
+        }
+
+        @include breakpoint-desktop {
+            top: -70px;
+            width: 1150px;
+            left: -700px;
+        }
+    }
+}
+
+.container-ImageVariations3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    .mainMobile-ImageVariations {
+        width: 80%;
+        z-index: 2;
+        padding: 0;
+
+        @include breakpoint-tablet {
+            width: 60%;
+        }
+
+        @include breakpoint-laptop {
+            width: 100%;
+            max-width: 32rem;
+            padding: 0;
+        }
+    }
+
+    .aux1-ImageVariations {
+        position: absolute;
+        top: -35px;
+        left: 35px;
+        z-index: -1;
+
+        @include breakpoint-tablet {
+            top: -30px;
+            left: -275px;
+            width: 100%;
+        }
+
+        @include breakpoint-laptop {
+            width: 50vw;
+            right: -250px;
+            left: auto;
+        }
+
+        @include breakpoint-desktop {
+            top: -150px;
+            width: 1150px;
+            right: -630px;
+            left: auto;
+        }
+    }
+}
+
+.container-ImageVariations4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+
+    .main-ImageVariations {
+        display: none;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .mainMobile-ImageVariations {
+        width: 92%;
+        z-index: 2;
+        padding: 0;
+
+        @include breakpoint-tablet {
+            width: 90vw;
+            max-width: 64rem;
+        }
+    }
+
+    .aux1-ImageVariations {
+        position: absolute;
+        top: 40px;
+        left: -50%;
+        z-index: 1;
+
+        @include breakpoint-tablet {
+            width: 450px;
+            bottom: -140px;
+            left: -140px;
+            top: auto;
+        }
+
+        @include breakpoint-desktop {
+            width: 780px;
+            top: -580px;
+            right: -30vw;
+            left: auto;
+            z-index: 0;
+        }
+    }
+}

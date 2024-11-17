@@ -1,0 +1,153 @@
+@import '../../styles/global';
+
+.container-Hero {
+    @extend .flex-center;
+    position: relative;
+    margin: 0 1rem;
+
+    @include breakpoint-tablet {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .image-Hero {
+        position: absolute;
+        top: 0;
+        right: -1rem;
+        width: 82vw;
+
+        @include breakpoint-tablet {
+            width: 35%;
+            max-width: 42rem;
+        }
+    }
+
+    .section-Hero {
+        @extend .section-size;
+
+        @include breakpoint-laptop {
+            padding-bottom: 4rem;
+        }
+
+        .infos-Hero {
+            @extend .flex-center;
+            gap: 1.5rem;
+            padding-top: 98vw;
+
+            @include breakpoint-tablet {
+                padding-top: 0;
+                width: 60%;
+                align-items: flex-start;
+            }
+
+            @include breakpoint-laptop {
+                width: 45%;
+            }
+
+            @include breakpoint-desktop {
+                width: 100%;
+                max-width: 37.5rem;
+            }
+
+            h1 {
+                font-family: $roboto;
+                font-weight: 700;
+                font-size: 2.5rem;
+                line-height: 2.75rem;
+                text-align: center;
+                color: $font-blue;
+                margin: 0;
+                padding-top: 3rem;
+
+                @include breakpoint-tablet {
+                    text-align: start;
+                    padding-top: 5rem;
+                }
+
+                @include breakpoint-laptop {
+                    text-align: start;
+                    padding-top: 7.5rem;
+                }
+
+                @include breakpoint-desktop {
+                    font-size: 4.5rem;
+                    line-height: 5rem;
+                    padding-top: 8.75rem;
+                }
+            }
+
+            p {
+                @extend .description-text;
+                font-size: 1.125rem;
+                line-height: 1.8rem;
+
+                @include breakpoint-tablet {
+                    text-align: start;
+                }
+
+                @include breakpoint-desktop {
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+
+        .brief-Hero {
+            padding: 4rem 0 0 0;
+
+            @include breakpoint-tablet {
+                width: 60%;
+            }
+
+            @include breakpoint-laptop {
+                width: 45%;
+                padding-top: 8rem;
+            }
+
+            @include breakpoint-desktop {
+                width: 100%;
+                max-width: 37.5rem;
+            }
+
+            p {
+                @extend .description-text;
+                text-align: left;
+
+                @include breakpoint-desktop {
+                    font-size: 1.125rem;
+                }
+            }
+
+            .profile {
+                padding-top: 1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                img {
+                    width: 4rem;
+                    height: 4rem;
+                    object-fit: cover;
+                    border-radius: 50%
+                }
+
+                .infos {
+                    padding-left: 1rem;
+
+                    h4 {
+                        @extend .description-text;
+                        font-size: 1.125rem;
+                        line-height: 1.8rem;
+                    }
+
+                    p {
+                        @extend .description-text;
+                        color: $gray;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

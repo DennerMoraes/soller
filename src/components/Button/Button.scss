@@ -1,0 +1,81 @@
+@import '../../styles/global';
+
+.button-line {
+    border-radius: 100px;
+    padding: 18px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: $black 0.125rem solid;
+    background-color: transparent;
+    transition: ease-in-out background-color 0.2s;
+
+    span {
+        display: block;
+        font-family: $roboto;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 1.5rem;
+        padding: 0 24px;
+        transition: ease-in-out color 0.2s;
+    }
+
+    svg{
+        margin: 5px;
+        fill: $black;
+        transition: ease-in-out fill 0.2s;
+    }
+
+    &.line-purple {
+        border: $purple 0.125rem solid;
+
+        &:hover {
+            background-color: $purple;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            cursor: pointer;
+
+            span {
+                color: $yellow;
+            }
+
+            svg {
+                fill: $yellow;
+            }
+        }
+
+        span {
+            color: $purple;
+        }
+
+        svg {
+            fill: $purple;
+        }
+    }
+
+    &.line-yellow {
+        border: $yellow 0.125rem solid;
+
+        &:hover {
+            background-color: $yellow;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            cursor: pointer;
+
+            span {
+                color: $brown;
+            }
+
+            svg {
+                fill: $brown;
+            }
+        }
+
+        span {
+            color: $yellow;
+        }
+
+        svg {
+            fill: $yellow;
+        }
+    }
+}
