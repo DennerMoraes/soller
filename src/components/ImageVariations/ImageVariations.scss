@@ -1,9 +1,9 @@
 @import '../../styles/global';
 
-.main-ImageVariations, .mainMobile-ImageVariations {
+.mainMobile-ImageVariations {
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
+}
 
 .container-ImageVariations1 {
     position: relative;

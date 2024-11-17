@@ -94,6 +94,10 @@
         &.order {
             .container-ImageVariations2 {
                 order: 1;
+
+                @include breakpoint-laptop {
+                    order: 0;
+                }
             }
         }
     }
