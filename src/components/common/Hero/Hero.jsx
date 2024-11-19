@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Hero.scss';
-import Button from '../Button/Button';
-import ManFixes from "../../assets/Hero/man-fixes.png";
+import Button from '../../common/Button/Button';
+import ManFixes from "../../../assets/Hero/man-fixes.png";
 import gsap from 'gsap';
 
 function Hero({ title, description, descriptionBrief, name, website, imgProfile, altProfile }) {

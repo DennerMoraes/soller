@@ -1,5 +1,5 @@
 import './Button.scss';
-import { ReactComponent as ArrowIcon } from '../../assets/Icons/arrow_right.svg';
+import { ReactComponent as ArrowIcon } from '../../../assets/Icons/arrow_right.svg';
 
 function Button({ label, variation }) {
   return (

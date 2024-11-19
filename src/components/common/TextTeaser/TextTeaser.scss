@@ -1,4 +1,4 @@
-@import '../../styles/global';
+@import '../../../styles/global';
 
 .container-TextTeaser {
     @extend .flex-center;
@@ -6,7 +6,7 @@
     padding: 3rem 0 4rem 0;
 
     @include breakpoint-tablet {
-        max-width: 56.25rem;
+        max-width: 55.25rem;
         margin: 0 auto;
     }
 

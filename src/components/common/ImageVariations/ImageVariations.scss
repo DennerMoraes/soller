@@ -1,4 +1,4 @@
-@import '../../styles/global';
+@import '../../../styles/global';
 
 .mainMobile-ImageVariations {
     opacity: 0;
@@ -213,7 +213,7 @@
         @include breakpoint-desktop {
             width: 780px;
             top: -580px;
-            right: -30vw;
+            right: -7vw;
             left: auto;
             z-index: 0;
         }

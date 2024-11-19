@@ -1,0 +1,36 @@
+@import '../../../styles/global';
+
+.grid-image {
+    @extend .flex-center;
+    gap: 4rem;
+
+    @include breakpoint-laptop {
+        flex-direction: row;
+    }
+
+    .title-text {
+        @include breakpoint-laptop {
+            display: flex;
+            flex-direction: column;
+
+            .container-TextTeaser {
+                align-items: flex-start;
+                margin: 0 1rem;
+
+                p {
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    &.left {
+        .container-ImageVariations3 {
+            order: 0;
+
+            @include breakpoint-laptop {
+                order: 1;
+            }
+        }
+    }
+}

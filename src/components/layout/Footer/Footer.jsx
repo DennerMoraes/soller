@@ -1,5 +1,5 @@
 import './Footer.scss';
-import BrandLogo from "../../assets/Icons/BrandLogo.svg";
+import BrandLogo from "../../../assets/Icons/BrandLogo.svg";
 
 function Footer({ footerDesc }) {
   return (

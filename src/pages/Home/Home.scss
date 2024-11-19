@@ -1,0 +1,114 @@
+@import '../../styles/global';
+
+.container {
+    overflow: hidden;
+
+    // .purple-bg {
+    //     background-color: $purple;
+
+        // @include breakpoint-desktop {
+        //     padding: 2rem 0;
+        //     z-index: 1;
+        //     position: relative;
+        // }
+    // }
+
+    // .purple-session {
+    //     @extend .flex-center;
+    //     background-color: $purple;
+
+    //     .text-purple-sesion {
+    //         @extend .description-text;
+    //         color: $white;
+    //         padding-top: 1rem;
+
+    //         @include breakpoint-desktop {
+    //             font-size: 1.125rem;
+    //             line-height: 1.8rem;
+    //         }
+    //     }
+
+    //     .title-button {
+    //         @extend .flex-center;
+
+    //         @include breakpoint-desktop {
+    //             max-width: 110rem;
+    //             margin: auto;
+    //             width: 100%;
+    //             flex-direction: row;
+    //             justify-content: space-between;
+
+    //             .container-TextTeaser {
+    //                 margin: 0 1rem;
+    //                 align-items: flex-start;
+
+    //                 p {
+    //                     text-align: start;
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     &.bg-light {
+    //         background-color: $purple-light;
+
+    //         @include breakpoint-desktop {
+    //             flex-direction: row;
+    //             flex-wrap: wrap;
+
+    //             .title-button {
+    //                 .container-TextTeaser {
+    //                     margin: 0 0 0 14rem;
+    //                 }
+    //             }
+
+    //             .container-TextTeaser {
+    //                 align-items: flex-start;
+
+    //                 h2 {
+    //                     text-align: start;
+    //                 }
+    //             }
+
+    //             .button-text {
+    //                 z-index: 1;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // .grid-image {
+    //     @extend .flex-center;
+    //     gap: 4rem;
+
+    //     @include breakpoint-laptop {
+    //         flex-direction: row;
+    //     }
+
+    //     .title-text {
+    //         @include breakpoint-laptop {
+    //             display: flex;
+    //             flex-direction: column;
+
+    //             .container-TextTeaser {
+    //                 align-items: flex-start;
+    //                 margin: 0 1rem;
+
+    //                 p {
+    //                     text-align: start;
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     &.order {
+    //         .container-ImageVariations2 {
+    //             order: 1;
+
+    //             @include breakpoint-laptop {
+    //                 order: 0;
+    //             }
+    //         }
+    //     }
+    // }
+}

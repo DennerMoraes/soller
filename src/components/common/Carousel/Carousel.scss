@@ -1,4 +1,4 @@
-@import '../../styles/global';
+@import '../../../styles/global';
 
 .carousel-container {
     .swiper {
@@ -27,7 +27,7 @@
 
         .swiper-button-prev {
             left: calc(50% - 2.35rem);
-            background-image: url(../../assets/Icons/PrevCarousel.svg);
+            background-image: url(../../../assets/Icons/PrevCarousel.svg);
 
             @include breakpoint-desktop {
                 max-width: 1750px;
@@ -37,7 +37,7 @@
 
         .swiper-button-next {
             left: calc(50% + 2.35rem);
-            background-image: url(../../assets/Icons/NextCarousel.svg);
+            background-image: url(../../../assets/Icons/NextCarousel.svg);
 
             @include breakpoint-desktop {
                 max-width: 1750px;

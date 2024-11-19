@@ -1,0 +1,54 @@
+@import '../../../styles/global';
+
+.lightpurple-session {
+    background-color: $purple-light;
+
+    .title-button {
+        @extend .flex-center;
+
+        @include breakpoint-desktop {
+            max-width: 107.5rem;
+            margin: auto;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .container-TextTeaser {
+                margin: 0 0 0 14rem;
+                align-items: flex-start;
+
+                p {
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    .button-text {
+        z-index: 1;
+
+        .text-purple-sesion {
+            @extend .description-text;
+            color: $white;
+            padding-top: 1rem;
+
+            @include breakpoint-desktop {
+                font-size: 1.125rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+    @include breakpoint-desktop {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .container-TextTeaser {
+            align-items: flex-start;
+
+            h2 {
+                text-align: start;
+            }
+        }
+    }
+}

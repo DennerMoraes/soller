@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Button from '../Button/Button';
+import Button from '../../common/Button/Button';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Header.scss';
-import Soller from "../../assets/Header/soller.svg";
-import HeadPhone from "../../assets/Header/HeadPhone.svg"
+import Soller from "../../../assets/Header/soller.svg";
+import HeadPhone from "../../../assets/Header/HeadPhone.svg"
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);

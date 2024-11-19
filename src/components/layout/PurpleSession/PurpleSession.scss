@@ -1,0 +1,32 @@
+@import '../../../styles/global';
+
+.purple-session {
+    background-color: $purple;
+
+    @include breakpoint-desktop {
+        padding: 2rem 0;
+        z-index: 1;
+        position: relative;
+    }
+
+    .title-button {
+        @extend .flex-center;
+
+        @include breakpoint-desktop {
+            max-width: 107.5rem;
+            margin: auto;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .container-TextTeaser {
+                margin: 0 1rem;
+                align-items: flex-start;
+
+                p {
+                    text-align: start;
+                }
+            }
+        }
+    }
+}

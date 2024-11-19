@@ -1,21 +1,19 @@
-import Home from '../src/pages/Home.jsx';
 import '../src/styles/global.scss';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header/Header.jsx';
-import Footer from './components/Footer/Footer.jsx';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './components/layout/Header/Header.jsx';
+import Footer from './components/layout/Footer/Footer.jsx';
+import RoutesComponent from './routes/RoutesComponent.jsx';
 
 function App() {
   return (
     <Router>
       <div className="App">
-      <Header />
+        <Header />
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
+          <RoutesComponent />
         </main>
       </div>
-      <Footer footerDesc={'@ 2023 Soller, Inc. All rights reserved.'}/>
+      <Footer footerDesc={'@ 2023 Soller, Inc. All rights reserved.'} />
     </Router>
   );
 }

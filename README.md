@@ -1,20 +1,57 @@
-# Getting Started Sollar project
+# Projeto React - Soller
 
-In the project directory, you can run:
+## Prerequisites
+Before you begin, make sure you have the following installed on your machine:
 
-### `npm install`
+- Git
+- Node.js
+- npm (Node Package Manager)
 
-This installs all the dependencies needed to run the project
+## Instructions to Run
 
-### `npm start`
+### 1. Clone the Repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open the terminal and run the following command to clone the repository:
 
-### `npm run build`
+```bash
+git clone https://github.com/DennerMoraes/soller.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Navigate to the Project Directory
+After the repository is cloned, navigate to the project directory:
+
+```bash
+cd soller
+```
+
+### 3. Install Dependencies
+Install all the necessary dependencies using npm.
+
+```bash
+npm install
+```
+
+### 4. Run the Project
+After installing the dependencies, you can start the development server.
+
+```bash
+npm start
+```
+
+### 5. Access the Application
+Open your browser and go to:
+
+```bash
+http://localhost:3000
+```
+
+The React application should be running and accessible from this address.
+
+### Estrutura do Projeto
+
+- public/ - Static public files, such as index.html.
+- src/ -  Source code files for React, including components, styles, and tests.
+- package.json - Contains project metadata and a list of dependencies.
 
 # Documentation
 
